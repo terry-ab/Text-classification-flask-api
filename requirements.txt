@@ -5,7 +5,7 @@ Jinja2
 MarkupSafe
 Werkzeug
 numpy
-scikit-sklearn
+scikit-learn
 keras
 tensorflow
 pickle
