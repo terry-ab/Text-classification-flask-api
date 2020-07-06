@@ -7,4 +7,4 @@ Werkzeug
 numpy
 scikit-learn
 keras
-tensorflow
+tensorflow==1.14.0
