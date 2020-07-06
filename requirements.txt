@@ -6,5 +6,5 @@ MarkupSafe
 Werkzeug
 numpy
 scikit-learn
-keras
+keras==2.3.1
 tensorflow==1.14.0
