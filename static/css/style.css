@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(plain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: #fff;
+    padding: 40px;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.7);
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(5, 91, 117)
+
+}
+.login h1{
+    font-family: cursive;
+    margin: 0 0 200px;
+    color: rgb(5, 91, 117);
+    text-align: center;
+}
+.login input{
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.login textarea{
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+.login input,
+.login textarea{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(8, 156, 201);
+    margin-bottom: 20px;
+}
+.login input[type="submit"]{
+    border-bottom: none;
+    cursor: pointer;
+    background: rgb(8, 156, 201);
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: bolder;
+    font-family: monospace;
+}
+.login form{
+    position: relative;
+    bottom: 100px;
+}
+.login form label{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: .5s;
+    color: #999;
+    pointer-events: none;
+}
+.login input:focus ~ label,
+.login textarea:focus ~ label,
+.login input:valid ~ label,
+.login textarea:valid ~ label{
+    top: -12px;
+    left: 0;
+    color: rgb(8, 156, 201);
+    font-size: 12px;
+    font-weight: bold;
+}
+.highlight{
+  right: 100px;
+}
