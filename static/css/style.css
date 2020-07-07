@@ -1,83 +1,98 @@
 body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: url(plain.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: sans-serif;
 }
-.login{
+.main{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 400px;
-    background: #fff;
-    padding: 40px;
-    border: 1px solid rgba(0,0,0,.2);
-    box-shadow: 0 5px 10px rgba(0,0,0,.7);
-    font-weight: bold;
-    font-family: sans-serif;
-    color: rgb(5, 91, 117)
-
+    height: 350px;;
 }
-.login h1{
+.main h1{
     font-family: cursive;
     margin: 0 0 200px;
-    color: rgb(5, 91, 117);
+    color: whitesmoke;
     text-align: center;
 }
-.login input{
+.main input{
     padding: 10px 0;
-    margin-bottom: 30px;
 }
-.login textarea{
+.main textarea{
+    background-color: #ffffff00;
     height: 80px;
     padding: 10px 0;
     margin-bottom: 40px;
-    font-family: sans-serif;
+    color: whitesmoke;
 }
-.login input,
-.login textarea{
+.main input,
+.main textarea{
     width: 100%;
     box-sizing: border-box;
     box-shadow: none;
     outline: none;
     border: none;
-    border-bottom: 2px solid rgb(8, 156, 201);
-    margin-bottom: 20px;
+    border-bottom: 2px solid whitesmoke;
+    margin-bottom: 40px;
 }
-.login input[type="submit"]{
+.main input[type="submit"]{
     border-bottom: none;
+    border-radius: 200px;
+    box-shadow: 0 0 5px;
     cursor: pointer;
-    background: rgb(8, 156, 201);
-    color: #fff;
+    background: black;
+    color: #F7F8F8;
     margin-bottom: 0;
+    text-transform: uppercase;
     font-weight: bolder;
-    font-family: monospace;
+    font-family: Georgia Pro;
 }
-.login form{
+.main form{
     position: relative;
     bottom: 100px;
 }
-.login form label{
+.main form label{
     position: absolute;
     top: 30px;
     left: 0;
     transition: .5s;
-    color: #999;
+    color: whitesmoke;
     pointer-events: none;
 }
-.login input:focus ~ label,
-.login textarea:focus ~ label,
-.login input:valid ~ label,
-.login textarea:valid ~ label{
+.main input:focus ~ label,
+.main textarea:focus ~ label,
+.main input:valid ~ label,
+.main textarea:valid ~ label{
     top: -12px;
     left: 0;
-    color: rgb(8, 156, 201);
+    color: whitesmoke;
     font-size: 12px;
     font-weight: bold;
 }
-.highlight{
-  right: 100px;
+.icons{
+    text-align: left;
+    position: relative;
+    top: 500px;
+    transform: translate(45%,50%);
+}
+.classes{
+  text-align: center;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 50px;
+  color: black;
+}
+.icons_p{
+  position: absolute;
+  background-color: whitesmoke;
+  width: 130px;
+  border: 15px solid whitesmoke;
+  padding-bottom: 100px;
+  text-align: center;
+  box-shadow: 0 0 15px;
 }

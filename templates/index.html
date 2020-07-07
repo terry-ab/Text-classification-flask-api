@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html >
-<!--From https://codepen.io/frytyler/pen/EGdtg-->
-<head>
-  <meta charset="UTF-8">
-  <title>ML API</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>new web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div class="main">
+            <h1>Text Classification</h1>
+            <form action="{{ url_for('predict')}}" method="post">
+                <textarea name="comment" required> </textarea>
+                <label for="texts">Enter some text</label>
+                <br>
+                <input type="submit" name="" value="Predict">
+            </form>
 
-</head>
+        </div>
+        <div class="icons">
+          {% if img_file %}
+            <p class="icons_p">Predicted class:</p>
+              <div  class="classes">
+                  <img  src="{{img_file}}" alt="svg not found">
+                  <p class="names">{{img_name}}
+          {% endif %}
+              </div>
 
-<body>
-
-  <div class="login">
-    <h1>Text Classification</h1>
-
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-      <textarea name="comment" required></textarea>
-      <label for="comment">Enter some text</label>
-      <input type=submit value="Predict" >
-    </form>
-
-   <br><span class="highlight">
-   {{ prediction_text }}
-   <span>
- </div>
+        </div>
 
 
-</body>
+    </body>
+
 </html>
